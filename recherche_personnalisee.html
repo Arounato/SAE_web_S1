@@ -1,0 +1,157 @@
+<!--ce fichier html contient le service de recherche personnalisé. il doit pouvoir afficher des articles de la boutique et contenir un fil d'arianne-->
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="(max-width: 320px)" type="text/css" href="CSS/style_mobile.css">
+    <link rel="stylesheet" media="(min-width: 321px)" type="text/css" href="CSS/style_ordinateur.css">
+    <script type="text/javascript" src="recherche_personnalisee.js"></script> 
+    <title>Recherche personnalisée</title>
+  </head>
+  <body onload="demarrer()">
+    <header>
+      <a href="index.html"><img src="Images/logo.png" width="85%"></a>
+      <a href="recherche_personnalisee.html">Recherche Personnalisée</a>
+      <a href="boutique_ordinateurs.html">Boutique</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="monter_un_ordinateur.html">Tuto montage</a>
+      <a href="qui_sommes_nous.html">Qui sommes-nous</a>
+      <a href="nous_contacter.html">Nous contacter</a>
+    </header>
+    <section>
+      <form class="formulaire" method="POST" action="https://dwarves.iut-fbleau.fr/recherche.php">
+	<div id="partie0">
+	  <h1>Recherche Personnalisée</h1>
+	  <h2>Budget</h2>
+	  <p>Quel est votre budget ?</p>
+	  <label for="prix_mini">Budget minimum : </label>
+	  <input type="number" name="prix_mini" id="prix_mini" placeholder="ex: 200" min="0" max="30000" required>
+	  <br>
+	  <br>
+	  <label for="prix_maxi">Budget maximum : </label>
+	  <input type="number" name="prix_maxi" id="prix_maxi" placeholder="ex: 1000" min="0" max="30000" required>
+	  <br>
+	  <br>
+	  <button class="button" id="bouton1" type="button" onclick="partie0()"> Suivant </button>
+	</div>
+	<div id="partie1">
+	  <h2>Logiciel</h2>
+	  <p>Quels logiciels voulez vous faire tourner ? Séparez les différents logiciels par une virgule si vous en mettez plusieurs.</p>
+	  <label for="logiciels">Logiciel(s) : </label>
+	  <input type="text" name="logiciels" id="logiciels" placeholder="ex: Android Studio" required>
+	  <br>
+	  <br>
+	  <button class="button" id="bouton2" type="button" onclick="partie1()"> Suivant </button>
+	</div>
+	<div id="partie2">
+	  <h2>Type d'ordinateur</h2>
+	  <p>Vous voulez un PC portable ou un PC fixe ?</p>
+	  <button class="button" id="bouton3" type="button" onclick="partie3()"> PC Portable </button>
+	  <button class="button" id="bouton4" type="button" onclick="partie4()"> PC fixe </button>
+	</div>
+	<div id="partie3">
+	  <h2>Les ordinateurs portables</h2>
+	  <img src="Images/Acer.jpg" width="15%">
+	  <button class="button" id="bouton5" type="button" onclick="partie6()"> Je veux celui-là </button>
+	  <img src="Images/asus_image.jpg" width="15%">
+	  <button class="button" id="bouton5" type="button" onclick="partie6()"> Je veux celui-là </button>
+	  <img src="Images/MSI.jpg" width="15%">
+	  <button class="button" id="bouton5" type="button" onclick="partie6()"> Je veux celui-là </button>
+	</div>
+	<div id="partie4">
+	  <h2>Les ordinateurs fixes</h2>
+	  <img src="Images/Vibox-I-11-PC-Gamer-photo-1.jpg" width="15%">
+	  <button class="button" id="bouton6" type="button" onclick="partie5()"> Je veux celui-là </button>
+	</div>
+	<div id="partie5">
+	  <h2>BUILD</h2>
+	  <p>Voulez-vous activer l'option BUILD ? <a href="FAQ.html">FAQ</a></p>
+	  <button class="button" id="bouton12" type="button" onclick="partie6()"> OUI </button>
+	  <button class="button" id="bouton7" type="button" onclick="partie12()"> NON </button>
+	</div>
+	<div id="partie6">
+	  <h2>Personnaliser</h2>
+	  <p>Voulez-vous personnaliser votre ordinateur ? </p>
+	  <button class="button" id="bouton8" type="button" onclick="partie8()"> OUI </button>
+	  <button class="button" id="bouton9" type="button" onclick="partie7()"> NON </button>
+	</div>
+	<div id="partie8">
+	  <h2>Accessoires</h2>
+	  <img src="Images/casque.jpg" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie10()"> Je veux celui-là </button>
+	  <img src="Images/clavier_souris.jpg" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie10()"> Je veux celui-là </button>
+	  <img src="Images/sac.webp" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie10()"> Je veux celui-là </button>
+	  <img src="Images/souris.jpg" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie10()"> Je veux celui-là </button>
+	  <img src="Images/stickers_1.jpg" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie10()"> Je veux celui-là </button>
+	  <img src="Images/tapis.avif" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie10()"> Je veux celui-là </button>
+	</div>
+	<div id="partie9">
+	  <h2>Installer des logiciels</h2>
+	  <p>Voulez-vous que des logiciels soient installés ? </p>
+	  <label for="installer_logiciels">Logiciel(s) : </label>
+	  <input type="text" name="installer_logiciels" id="installer_logiciels" placeholder="ex: Android Studio">
+	  <br>
+	  <br>
+	  <button class="button" id="bouton14" type="button" onclick="partie7()"> Suivant </button>
+	</div>
+	<div id="partie12">
+	  <h2>Personnaliser</h2>
+	  <p>Voulez-vous personnaliser votre ordinateur ? </p>
+	  <button class="button" id="bouton15" type="button" onclick="partie14()"> OUI </button>
+	  <button class="button" id="bouton16" type="button" onclick="partie7()"> NON </button>
+	</div>
+	<div id="partie14">
+	  <h2>Accessoires</h2>
+	  <img src="Images/casque.jpg" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie7()"> Je veux celui-là </button>
+	  <img src="Images/clavier_souris.jpg" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie7()"> Je veux celui-là </button>
+	  <img src="Images/sac.webp" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie7()"> Je veux celui-là </button>
+	  <img src="Images/souris.jpg" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie7()"> Je veux celui-là </button>
+	  <img src="Images/stickers_1.jpg" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie7()"> Je veux celui-là </button>
+	  <img src="Images/tapis.avif" width="15%">
+	  <button class="button" id="bouton17" type="button" onclick="partie7()"> Je veux celui-là </button>
+	</div>
+	<div id="partie11">
+	  <h2>Autre</h2>
+	  <p>Avez-vous des précisions à nous donner ? </p>
+	  <textarea name="message" id="message"></textarea>
+	  <br>
+	  <button class="button" id="bouton7" type="submit"><a href="index.html"> Mettre dans le panier et retour à la page d'accueil</a></button>
+	</div>
+      </form>
+    </section>
+    <footer id="footer">
+      <img id="bandeau_page" src="Images/CB.jpg" alt="Nous acceptons les CB, VISA et MasterCard">
+      <ul>Tous nos liens
+	<li><a href="index.html">Accueil</a></li>
+	<li><a href=#top>Recherche Personnalisée</a></li>
+	<li><a href="boutique_ordinateurs.html">Boutique ordinateurs</a></li>
+	<li><a href="boutique_composants.html">Boutique composants</a></li>
+	<li><a href="boutique_accessoires.html">Boutique accessoires</a></li>
+	<li><a href="FAQ.html">FAQ</a></li>
+	<li><a href="monter_un_ordinateur.html">Tuto montage</a></li>
+	<li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+	<li><a href="nous_contacter.html">Nous contacter</a></li>
+      </ul>
+      <ul>Les Créateurs de Find'IT :
+	<br><br>
+	<li>VALLEJOS Robert Andres</li>
+	<br>
+	<li>LAFFEA-DIDOT Loryne</li>
+	<br>
+	<li>BOUSSON Héloïse</li>
+      </ul>
+      <a id="bandeau_page" href=#top>Haut de page</a>
+    </footer>
+  </body>
+</html>

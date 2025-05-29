@@ -1,0 +1,94 @@
+<!--Page de FAQ-->
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="(max-width: 320px)" type="text/css" href="CSS/style_mobile.css">
+    <link rel="stylesheet" media="(min-width: 321px)" type="text/css" href="CSS/style_ordinateur.css">
+    <title>FAQ</title>
+    <script>
+      var bouton = 0;
+      function DeroulerTexte(idTexte,idBouton, texte){
+	  if (bouton == 0){
+	      document.getElementById(idTexte).textContent= texte;
+	      document.getElementById(idBouton).textContent= ' - ';
+	      bouton = 1;
+	  }
+	  else{
+	      document.getElementById(idTexte).textContent= '';
+	      document.getElementById(idBouton).textContent= ' + ';
+	      bouton = 0;
+	  }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="Images/logo.png" width="85%"></a>
+      <a href="recherche_personnalisee.html">Recherche Personnalisée</a>
+      <a href="boutique_ordinateurs.html">Boutique</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="monter_un_ordinateur.html">Tuto montage</a>
+      <a href="qui_sommes_nous.html">Qui sommes-nous</a>
+      <a href="nous_contacter.html">Nous contacter</a>
+    </header>
+    <section>
+      <h1>Questions fréquentes</h1>
+      <ul>
+	<li><p>Comment rechercher un produit ? <button class="button" id="boutonQ1" type="button" onclick="DeroulerTexte('Q1','boutonQ1','2 solutions s\u2019offrent à vous : Si vous savez précisemment quel produit vous souhaitez, rendez vous à la boutique qui répondra à vos attentes. Sinon, notre onglet recherche personnalisée répondra à vos besoins, aussi précis soient-ils.')"> + </button></p>
+	  <div id="Q1"></div></li>
+	
+	<li><p>Qu'est-ce que la recherche personnalisée ? <button class="button" id="boutonQ2" type="button" onclick="DeroulerTexte('Q2','boutonQ2','L\u2019onglet recherche personnalisée vous permet de faire des recherches précises qui répondent à vos besoins. Vous devez y indiquer si vous cherchez un ordinateur fixe ou portable, les logiciels que vous souhaitez faire tourner dessus, la couleur des composants ou encore votre budget.')"> + </button></p>
+	  <div id="Q2"></div></li>
+
+	<li><p>A quoi sert l'option BUILD ? <button class="button" id="boutonQ3" type="button" onclick="DeroulerTexte('Q3','boutonQ3','Lorsque vous commandez un produit via notre onglet recherche personnalisée, vous pouvez choisir l\u2019option BUILD. Cela vous permettra de recevoir votre ordinateur monté et personnalisé selon vos envies. Vous pouvez choisir la peinture, les stickers, le fond d\u2019écran, le système d\u2019exploitation, les logiciels à installer... Votre ordinateur arrivera chez vous prêt à l\u2019emploi !')"> + </button></p>
+	  <div id="Q3"></div></li>
+
+	<li><p>Quels sont les modes de paiement que vous acceptez ? <button class="button" id="boutonQ4" type="button" onclick="DeroulerTexte('Q4','boutonQ4','Le paiement s\u2019effectue exclusivement par carte bancaire.')"> + </button></p>
+	  <div id="Q4"></div></li>
+
+	<li><p>Peut on payer en plusieurs fois ? <button class="button" id="boutonQ5" type="button" onclick="DeroulerTexte('Q5','boutonQ5','Pour vous adapter à votre rythme, vous pouvez décider lors de votre achat de payer en 5 ou 10 fois')."> + </button></p>
+	  <div id="Q5"></div></li>
+
+	<li><p>Quels sont les délais de livraison ? <button class="button" id="boutonQ6" type="button" onclick="DeroulerTexte('Q6','boutonQ6','Votre produit sera livré chez vous ou au point relais le plus proche. Le prix et le temps de livraison varie selon le délai de confirmation, d\u2019expédition et d\u2019acheminement de votre produit. Si vous avez ajouté l\u2019option BUILD, le temps de livraison peut être prolongé jusqu\u2019à 1 semaine pendant laquelle nous nous occupons de votre futur ordinateur.')"> + </button></p>
+	  <div id="Q6"></div></li>
+
+	<li><p>A-t-on besoin d'un compte ? <button class="button" id="boutonQ7" type="button" onclick="DeroulerTexte('Q7','boutonQ7','Pour pouvoir acheter des produits sur notre site, il vous faudra créer un compte. Cela vous permettra d\u2019enregistrer vos informations de paiement (si vous le souhaitez), de suivre votre commande ou encore de consulter vos achats ultérieurs')"> + </button></p>
+	  <div id="Q7"></div></li>
+ 
+	<li><p>Que faire pour éviter que mon compte soit piraté ? <button class="button" id="boutonQ8" type="button" onclick="DeroulerTexte('Q8','boutonQ8','Lors de la création du compte, veuilez entrer un mot de passe d\u2019au moins 8 caractères, contenant des majuscules, des minuscules, des caractères spéciaux et des chiffres. Méfiez-vous toujours quand des informations personnelles vous sont demandées. Il faut que vous soyez sûr d\u2019etre sur notre site avant de renseigner vos informations de paiement et connexion. Si vous avez le moindre doute, n\u2019hésitez pas à changer votre mot de passe.')"> + </button></p>
+	  <div id="Q8"></div></li>
+
+	<li><p>D'où viennent les produits ? <button class="button" id="boutonQ9" type="button" onclick="DeroulerTexte('Q9','boutonQ9','Nous sommez une Market Place. Nos produits proviennent des sites internets de nos partenaires tels que Amazon, FNAC, Boulanger...')"> + </button></p>
+	  <div id="Q9"></div></li>
+
+	<li><p>Pour plus d'informations <button class="button" id="boutonQ10" type="button" onclick="DeroulerTexte('Q10','boutonQ10','Pour plus d\u2019informations, n\u2019hésitez pas à nous poser des questions sur notre page contact accessible depuis l\u2019onglet contact. Nous vous répondrons aussi vite que possible.')"> + </button></p>
+	  <div id="Q10"></div></li>
+      </ul>
+    </section>
+    <footer id="footer">
+      <img id="bandeau_page" src="Images/CB.jpg" alt="Nous acceptons les CB, VISA et MasterCard">
+      <ul>Tous nos liens
+	<li><a href="index.html">Accueil</a></li>
+	<li><a href="recherche_personnalisee.html">Recherche Personnalisée</a></li>
+	<li><a href="boutique_ordinateurs.html">Boutique ordinateurs</a></li>
+	<li><a href="boutique_composants.html">Boutique composants</a></li>
+	<li><a href="boutique_accessoires.html">Boutique accessoires</a></li>
+	<li><a href=#top>FAQ</a></li>
+	<li><a href="monter_un_ordinateur.html">Tuto montage</a></li>
+	<li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+	<li><a href="nous_contacter.html">Nous contacter</a></li>
+      </ul>
+      <ul>Les Créateurs de Find'IT :
+	<br><br>
+	<li>VALLEJOS Robert Andres</li>
+	<br>
+	<li>LAFFEA-DIDOT Loryne</li>
+	<br>
+	<li>BOUSSON Héloïse</li>
+      </ul>
+      <a id="bandeau_page" href=#top>Haut de page</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!--Page de nous contacter-->
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="(max-width: 320px)" type="text/css" href="CSS/style_mobile.css">
+    <link rel="stylesheet" media="(min-width: 321px)" type="text/css" href="CSS/style_ordinateur.css">
+    <title>Nous contacter</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="Images/logo.png" width="85%"></a>
+      <a href="recherche_personnalisee.html">Recherche Personnalisée</a>
+      <a href="boutique_ordinateurs.html">Boutique</a>
+      <a href="FAQ.html">FAQ</a>
+      <a href="monter_un_ordinateur.html">Tuto montage</a>
+      <a href="qui_sommes_nous.html">Qui sommes-nous</a>
+      <a href="nous_contacter.html">Nous contacter</a>
+    </header>
+    <section>
+      <h1>Posez vos questions / Donnez-nous votre avis</h1>
+      <p class="centrer_texte">Vous vous posez une question et n'avez pas trouvé la réponse sur le site, ou vous souhaitez simplement \n donner votre avis ? Renseignez ce formulaire en nous laissant votre message et nous vous répondrons sur votre adresse mail ! <em>Les champs marqués d'une étoile (*) sont obligatoires.</em></p>
+      <form class="formulaire" method="POST" action="https://dwarves.iut-fbleau.fr/requete.php">
+	<div>
+	  <label for="lastname">Nom : *</label>
+	  <input type="text" name="lastname" id="lastname" placeholder="ex: Dupré" required>
+	</div>
+	<br>
+	<div>
+	  <label for="firstname">Prénom : *</label>
+	  <input type="text" name="firstname" id="firstname" placeholder="ex: Paul" required>
+	</div>
+	<br>
+	<div>
+	  <label for="birthdate">Date de naissance : </label>
+	  <input type="date" name="birthdate" id="birthdate">
+	</div>
+	<br>
+	<div>
+	  <label for="email">Adresse email : *</label>
+	  <input type="email" name="email" id="email" placeholder="ex: paul.dupre@gmail.com" required>
+	</div>
+	<br>
+	<div>
+	  <label for="postcode">Code postal : </label>
+	  <input type="number" name="postcode" id="postcode" placeholder="ex: 77300" min="5" max="99999">
+	</div>
+	<br>
+	<div>
+	  <label for="phonenumber">N° Télephone portable : </label>
+	  <input type="text" name="phonenumber" id="phonenumber" placeholder="ex: 0655667788" pattern="^(\+33|0)[6-7](\d\d){4}$">
+	</div>
+	<br>
+	<div>
+	  <label for="categorie">Catégorie : *</label>
+	  <select name="categorie" id="categorie" required>
+	    <option value="">--Choisissez une option--</option>
+	    <option value="Ordinateur Fixe">Ordinateur fixe</option>
+	    <option value="Ordinateur Portable">Ordinateur portable</option>
+	    <option value="Accessoires">Accessoires</option>
+	    <option value="Autres">Autre</option>
+	  </select>
+	</div>
+	<br>
+	<div>
+	  <label for="message">Message : *</label>
+	  <br>
+	  <br>
+	  <textarea name="message" id="message" required></textarea>
+	</div>
+	<br>
+	<div>
+	  <input type="submit" value="Envoyer">
+	  <input type="reset" value="Remettre à zéro">
+	</div>
+      </form>
+    </section>
+    <footer id="footer">
+      <img id="bandeau_page" src="Images/CB.jpg" alt="Nous acceptons les CB, VISA et MasterCard">
+      <ul>Tous nos liens
+	<li><a href="index.html">Accueil</a></li>
+	<li><a href="recherche_personnalisee.html">Recherche Personnalisée</a></li>
+	<li><a href="boutique_ordinateurs.html">Boutique ordinateurs</a></li>
+	<li><a href="boutique_composants.html">Boutique composants</a></li>
+	<li><a href="boutique_accessoires.html">Boutique accessoires</a></li>
+	<li><a href="FAQ.html">FAQ</a></li>
+	<li><a href="monter_un_ordinateur.html">Tuto montage</a></li>
+	<li><a href="qui_sommes_nous.html">Qui sommes-nous</a></li>
+	<li><a href=#top>Nous contacter</a></li>
+      </ul>
+      <ul>Les Créateurs de Find'IT :
+	<br><br>
+	<li>VALLEJOS Robert Andres</li>
+	<br>
+	<li>LAFFEA-DIDOT Loryne</li>
+	<br>
+	<li>BOUSSON Héloïse</li>
+      </ul>
+      <a id="bandeau_page" href=#top>Haut de page</a>
+    </footer>
+  </body>
+</html>
