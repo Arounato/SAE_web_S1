@@ -1,12 +1,16 @@
 # SAE_web_S1
 
-Travail de groupe effectué en 2022 à l'IUT Sénart de Fontainebleau
+## Description du projet
+Création d'un site internet de type **market plat**.
 
-Il s'agit d'un travail de groupe à trois, où l'une des personnes souhaite garder l'anonymat.
+Ce projet combinait 3 matières dont :
+- le développement web
+- la communication
+- l'économie, gestion et droit
 
-J'ai principalement apporté mon aide dans la création des pages HTML et dans la recherche d'idées à intégrer.
+Travail de groupe effectué à trois. (Une personne souhaite garder son identité anonyme. Donc son CV et sa photo sont ignorés à l'aide de .gitignore.)
 
-Ce projet combinait trois matières :
-    Développement web
-    Communication
-    Économie, gestion et droit
+## Langage utilisé 
+- langage HTML
+- langage CSS
+- langage JavaScript
