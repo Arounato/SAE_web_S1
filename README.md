@@ -1,7 +1,7 @@
 # SAE_web_S1
 
 ## Description du projet
-Création d'un site internet de type **market plat**.
+Création d'un site internet de type **marketplace**.
 
 Ce projet combinait 3 matières dont :
 - le développement web
@@ -11,6 +11,6 @@ Ce projet combinait 3 matières dont :
 Travail de groupe effectué à trois. (Une personne souhaite garder son identité anonyme. Donc son CV et sa photo sont ignorés à l'aide de .gitignore.)
 
 ## Langage utilisé 
-- langage HTML
-- langage CSS
-- langage JavaScript
+- HTML
+- CSS
+- JS
