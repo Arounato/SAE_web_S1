@@ -3,14 +3,17 @@
 ## Description du projet
 Création d'un site internet de type **marketplace**.
 
-Ce projet combinait 3 matières dont :
-- le développement web
-- la communication
-- l'économie, gestion et droit
+Ce projet avait pour particularité de combiner trois matières principales :
+- Le développement web
+- La communication
+- L'économie, la gestion et le droit
 
-Travail de groupe effectué à trois. (Une personne souhaite garder son identité anonyme. Donc son CV et sa photo sont ignorés à l'aide de .gitignore.)
+Travail de groupe effectué à trois. (Note : une personne souhaitant garder son identité anonyme, son CV et sa photo ont été ignorés à l'aide de `.gitignore`.)
 
-## Langage utilisé 
+## Langages utilisés
 - HTML
 - CSS
 - JS
+
+## Outils utilisés
+- Visual Studio Code
